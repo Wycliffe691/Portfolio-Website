@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* position: fixed; */
+}
+.nav-bar{
+    width: 100%;
+    background: white;
+    padding: 1rem 1rem 0 1rem;
+    position: fixed;
+}
+
+nav{
+    display: flex;
+    padding: 2%, 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding: 2px 12px;
+    position: relative;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* HERO SECTION STYLING */
+.hero-section{
+    /* background: rgb(241, 16, 16); */
+    margin: -30% 0 0 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 4rem;
+    justify-content: space-between;
+    height: auto;
+}
+
+.hero-details{
+    text-align: left;
+    padding-left: 10%;
+}
+.hero-details h1{
+    font-size: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
+}
+.hero-details h1 span{
+    font-family: 'Teko', sans-serif;
+    color: blue;
+}
+.hero-details .hero-btn{
+    text-align: left;
+    
+}
+.hero-section button{
+    padding: 12px;
+    margin-top: 2rem;
+    /* text-decoration: none; */
+    background: blue;
+    border: 0px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.hero-section button:hover{
+    opacity: 0.6;
+}
+.hero-section .CV-btn{
+    margin-left: 5rem;
+}
+.hero-section button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ABOUT SECTION STYLING */
+.about-me-heading{
+    text-align: center;
+    width: 80%;
+    margin-top: 6%;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.about-section{
+    width: 80%;
+    display: flex;
+    margin-left: 5%;
+    /* background: red; */
+    padding-top: 20px;
+}
+.about-section p{
+    margin-left: 40px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.about-section p span{
+    font-weight: 900;
+    font-family: 'EB Garamond', serif;
+}
+
+/* PROJECTS SECTION STYLING */
+.projects-header{
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.projects{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin-top: 2rem;
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+.reviews-project, .University-project, .color-flipper-project{
+    position: relative;
+    width: 50%;
+}
+/*  */
+.overlay{
+    transition: 0.5s ease;
+    
+}
+
+.projects img:hover{
+    opacity: 0.3;
+}
+.projects p{
+    color: black;
+    font-weight: bold;
+    margin-top: 6px;
+}
+.projects p a{
+    text-decoration: none;
+    color: blue;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* FOOTER/CONTACTS STYLING */
+.footer{
+    background: black;
+    color: white;
+    height: 10rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.social-links{
+    padding-top: 20px;
+}
+.social-links i {
+    padding: 8px;
+    transition: transform 0.5s ease;
+}
+.social-links i:hover{
+transform: scale(1.8);
+}
+.social-links a{
+    color: white;
+}
+.footer-text{
+    padding-top: 20px;
+    line-height: 30px;
+}
