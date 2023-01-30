@@ -30,8 +30,9 @@ li a{
 nav{
     display: flex;
     padding: 2%, 6%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    z-index: 2;
 }
 
 .nav-links{
@@ -42,7 +43,7 @@ nav{
 .nav-links ul li{
     display: inline-block;
     padding: 2px 12px;
-    position: relative;
+    /* position: relative; */
 }
 
 .nav-links ul li::after{
@@ -59,6 +60,53 @@ nav{
     width: 100%;
 }
 
+/* NAV BAR RESPONSE */
+.nav-bar i {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav-links {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: rgb(85, 109, 218);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      max-width: 100%;
+      margin-top: 20px;
+      justify-content: space-between;
+      /* transition: all 1.5s ease-out; */
+    }
+
+    .nav-bar i {
+      display: block;
+      margin-left: 50%;
+    }
+
+    .nav-links ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-bar img{
+        width: 40%;
+    }
+
+  }
+
 /* HERO SECTION STYLING */
 .hero-section{
     /* background: rgb(241, 16, 16); */
@@ -67,7 +115,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 4rem;
+    margin-left: 2rem;
     justify-content: space-between;
     height: auto;
 }
@@ -108,6 +156,13 @@ nav{
     text-decoration: none;
     color: white;
 }
+/* HERO RESPONSE */
+@media screen and (max-width: 767px) {
+    .hero-details .text{
+        font-size: 40px;
+    }
+    
+}
 
 /* ABOUT SECTION STYLING */
 .about-me-heading{
@@ -133,6 +188,16 @@ nav{
     font-weight: 900;
     font-family: 'EB Garamond', serif;
 }
+/* ABOUT RESPONSE */
+@media screen and (max-width: 767px){
+    .about-section{
+        display: block;
+    }
+    .about-section img{
+        display: none;
+    }
+}
+
 
 /* PROJECTS SECTION STYLING */
 .projects-header{
@@ -143,18 +208,20 @@ nav{
     text-decoration: underline;
 }
 .projects{
-    width: 100%;
+    width: 80%;
     display: flex;
     padding: 5px;
     justify-content: space-between;
     margin-top: 2rem;
     position: relative;
     text-align: center;
+    margin-left: 10%;
     /* color: white; */
 }
 .reviews-project, .University-project, .color-flipper-project{
     position: relative;
-    width: 50%;
+    z-index: 1;
+    /* width: 50%; */
 }
 /*  */
 .overlay{
@@ -175,6 +242,19 @@ nav{
     color: blue;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* PROJECTS RESPONSE */
+@media screen and (max-width: 767px) {
+    .projects{
+        display: block;
+        /* align-items: center; */
+        /* justify-content: center; */
+        margin-left: 8%;
+        padding: 5%;
+        /* width: ; */
+    }
+}
+
 /* FOOTER/CONTACTS STYLING */
 .footer{
     background: black;
@@ -199,4 +279,7 @@ transform: scale(1.8);
 .footer-text{
     padding-top: 20px;
     line-height: 30px;
+}
+@media screen and (max-screen = 700px) {
+    
 }
