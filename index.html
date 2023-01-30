@@ -11,9 +11,9 @@
     <script src="https://kit.fontawesome.com/2e2767d256.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="header">
+    <section class="header" id="top-nav">
         <nav class="nav-bar">
-            <img src="Photos/portfolio logo.png" alt="WYCLIFFE NYAKWAKA">
+            <img src="/Photos/portfolio logo.png" alt="WYCLIFFE NYAKWAKA">
             <div class="nav-links">
                 <ul>
                     <li><a href="#Hero-section">home</a></li>
@@ -22,6 +22,7 @@
                     <li><a href="#contacts">contacts</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </section>
     <!-- HERO SECTION -->
@@ -34,7 +35,7 @@
             </div>
         </div>
         <div class="hero-image">
-                <img class="img-wapper" src="Photos/IMG_4707.jpg" alt="">
+                <img class="img-wapper" src="/Photos/IMG_4707.jpg" alt="">
         </div>
     </section>
         <div class="about-me-heading" >
@@ -43,7 +44,7 @@
     <!-- ABOUT SECTION -->
     <section class="about-section" id="about-section">
             <div class="about-img">
-            <img src="Photos/laptop, cofee, notebook.jpg" alt="laptop, coffee, notebook">
+            <img src="/Photos/laptop, cofee, notebook.jpg" alt="laptop, coffee, notebook">
             </div>
             <div class="about-details">
                <p>
@@ -70,19 +71,19 @@
     <section class="project-section" id="project-section">
         <div class="projects">
             <div class="reviews-project">
-                <img src="Photos/Reviews project.png" alt="" class="image">
+                <img src="/Photos/Reviews project.png" alt="" class="image">
                 <div class="overlay">
                     <p>Review project using HTML, CSS, and JS <a href="#">Visit site</a></p>
                 </div>
             </div>
             <div class="University-project">
-                <img src="Photos/University website.png" alt="" class="image">
+                <img src="/Photos/University website.png" alt="" class="image">
                 <div class="overlay">
                     <p>University website using HTML, CSS, and JS <a href="#">Visit site</a></p>
                 </div>
             </div>
             <div class="color-flipper-project">
-                <img src="Photos/color flipper.png" alt="" class="image">
+                <img src="/Photos/color flipper.png" alt="" class="image">
                 <div class="overlay">
                     <p>Color flipping project using HTML, CSS, and JS <a href="#">Visit site</a></p>
                 </div>
@@ -106,5 +107,14 @@
         </div>
     </section>
 
+    <script>
+        const hamburger = document.querySelector('.fa-bars');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        });
+        
+    </script>
+    
 </body>
 </html>
