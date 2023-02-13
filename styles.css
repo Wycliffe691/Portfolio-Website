@@ -226,6 +226,7 @@ nav{
     position: relative;
     text-align: center;
     margin-left: 10%;
+    flexwrap: wrap;
     /* color: white; */
 }
 .reviews-project, .University-project, .color-flipper-project{
@@ -265,6 +266,8 @@ nav{
     }
     .projects img{
         width: 80%;
+        margin-top: 2rem;
+
     }
 }
 
